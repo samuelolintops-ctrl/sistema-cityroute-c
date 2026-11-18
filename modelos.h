@@ -27,6 +27,13 @@ typedef struct pedido_entrega{
 	float valor;
 } Pedido_entrega;
 
+// Histórico dos pedidos ja despachados
+typedef struct historico{
+    Pedido_entrega dados_p_pedidos;
+    struct historico *prox;
+} Historico;
+
+// Estrutura da fila de prioridade dos pedidos
 typedef struct heap{
     Pedido_entrega *dados;
     int tamanho;

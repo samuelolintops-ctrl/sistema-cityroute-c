@@ -92,12 +92,10 @@ int mostra_menu(char **lista_opcoes, int tam_list){
     param tam_list: quantidade de itens na lista.
     return: retorna um int definindo a opcao digitada pelo usuario.
     */
-    int opc, i;
-    while(1){
-        for(i = 0; i < tam_list; i++){
-            printf("\n%d. %s", i + 1, lista_opcoes[i]);
-        }
-        opc = solicita_int("\nDigite sua opcao: ", 0, tam_list);
+    int opc;
+    for(int i = 0; i < tam_list; i++){
+        printf("\n%d. %s", i + 1, lista_opcoes[i]);
     }
+    opc = solicita_int("\nDigite sua opcao: ", 0, tam_list - 1);
     return opc;
 }
