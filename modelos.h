@@ -1,0 +1,37 @@
+#ifndef MODELOS_H_INCLUDED
+#define MODELOS_H_INCLUDED
+
+#define TAM_NOME_LOCAL 80
+
+// Constantes para niveis de prioridade
+typedef enum{
+    PRIORIDADE_EXPRESSA = 3,
+    PRIORIDADE_VIP = 2,
+    PRIORIDADE_CONVENCIONAL = 1
+} Prioridade;
+
+// Representa um local de destino das encomendas
+typedef struct ponto_entrega{
+	int id_ponto;
+	char nome_local[TAM_NOME_LOCAL];
+	double latitude, longitude;
+} Ponto_entrega;
+
+// Representa um pacote a ser despachado
+typedef struct pedido_entrega{
+	int cod_rastreio;
+	Prioridade prioridade;
+	unsigned long ordem_chegada;
+	float peso_pacote;
+	int id_destino;
+	float valor;
+} Pedido_entrega;
+
+typedef struct heap{
+    Pedido_entrega *dados;
+    int tamanho;
+    int capacidade;
+    unsigned long proximo_ordem;
+} Heap;
+
+#endif // MODELOS_H_INCLUDED
