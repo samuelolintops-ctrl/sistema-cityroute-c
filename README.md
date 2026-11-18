@@ -18,4 +18,5 @@ O sistema simula o funcionamento de uma central de distribuição urbana, gerenc
 **Autores:**
 
 Discentes: Rodrigo Freitas, Samuel Olinto, Thaissa Sampaio e Vinicius Lopes
+
 Curso: Ciência da Computação — UESC
