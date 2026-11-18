@@ -16,5 +16,6 @@ O sistema simula o funcionamento de uma central de distribuição urbana, gerenc
 * Relatórios e Testes: Gerar cópia ordenada do histórico (por código ou valor), executar carga inicial automatizada e comparar tempo/operações entre algoritmos O(n^2) e O(n log n).
   
 **Autores:**
+
 Discentes: Rodrigo Freitas, Samuel Olinto, Thaissa Sampaio e Vinicius Lopes
 Curso: Ciência da Computação — UESC
