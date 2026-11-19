@@ -38,6 +38,7 @@ Historico *consultar_pedido_historico(Historico *cabeca, int cod_rastreio){
     }
 }
 
+// Imprime os detalhes de um unico pedido processado recebido por parametro
 void imprimir_historico(Historico *cabeca){
     printf("Codigo de rastreio: %d\n", cabeca->dados_pedidos->cod_rastreio);
     printf("Valor do pedido: %f\n", cabeca->dados_pedidos->valor);
