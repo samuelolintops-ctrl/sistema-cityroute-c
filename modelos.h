@@ -29,7 +29,7 @@ typedef struct pedido_entrega{
 
 // Histórico dos pedidos ja despachados
 typedef struct historico{
-    Pedido_entrega dados_p_pedidos;
+    Pedido_entrega dados_pedidos;
     struct historico *prox;
 } Historico;
 
