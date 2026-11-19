@@ -50,4 +50,11 @@ void le_string(char mensagem[], char string[], size_t tam);
  */
 int mostra_menu(char **lista_opcoes, int tam_list);
 
+/*
+- Funcao: verificar_alocacao
+- Complexidade Temporal: O(1) pior caso
+- Verifica se o ponteiro passado como parametro é nulo, encerrando o programa caso a alocação tenha falhado.
+ */
+void verificar_alocacao(void *ptr);
+
 #endif // UTIL_H_INCLUDED
