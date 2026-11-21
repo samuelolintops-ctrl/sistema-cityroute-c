@@ -99,3 +99,7 @@ int mostra_menu(char **lista_opcoes, int tam_list){
     opc = solicita_int("\nDigite sua opcao: ", 0, tam_list - 1);
     return opc;
 }
+
+void verificar_alocacao(void *ptr){
+    
+}

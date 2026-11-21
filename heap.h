@@ -3,6 +3,28 @@
 
 #include "modelos.h"
 
+
+/*
+ * Funcao: pai
+ * Complexidade Temporal: O(1) pior caso
+ * Retorna o indice do pai do elemento passado
+ */
+int pai(int i);
+
+/*
+ * Funcao: pai
+ * Complexidade Temporal: O(1) pior caso
+ * Retorna o indice do filho esquerdo do elemento passado
+ */
+int filho_esquerdo(int i);
+
+/*
+ * Funcao: pai
+ * Complexidade Temporal: O(1) pior caso
+ * Retorna o indice do filho direito do elemento passado
+ */
+int filho_direito(int i);
+
 /*
  * Funcao: tem_maior_prioridade
  * Complexidade Temporal: O(1) pior caso
