@@ -100,6 +100,10 @@ int mostra_menu(char **lista_opcoes, int tam_list){
     return opc;
 }
 
+// Verifica se o ponteiro passado como parametro é nulo, encerrando o programa caso a alocação tenha falhado
 void verificar_alocacao(void *ptr){
-    
+    if(ptr == NULL){
+        printf("ERRO: Memoria nao alocada.\nPrograma encerrado");
+        exit(1);
+    }
 }
