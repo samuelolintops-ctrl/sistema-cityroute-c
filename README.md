@@ -5,7 +5,7 @@ O sistema simula o funcionamento de uma central de distribuição urbana, gerenc
 
 **Estruturas de Dados Utilizadas:**
 * Árvore Binária de Busca (BST): Cadastro, busca, remoção (com validação de pendências) e listagem ordenada (in-order) dos Pontos de Entrega, implementada com nós encadeados e recursividade.
-* Heap Binário (Min-Heap Dinâmico): Gerenciamento da Fila de Prioridade de pedidos pendentes (1 = Convencional; 2 = VIP; 3 = Expressa), com critério de desempate FIFO via contador incremental de ordem de chegada.
+* Heap Binário (Max-Heap Dinâmico): Gerenciamento da Fila de Prioridade de pedidos pendentes (1 = Convencional; 2 = VIP; 3 = Expressa), com critério de desempate FIFO via contador incremental de ordem de chegada.
 * Lista Encadeada: Armazenamento persistente em memória do Histórico de Operações já despachadas.
 * Algoritmos de Ordenação: Implementação de um algoritmo quadrático O(n^2) e um logarítmico O(n log n) para geração de relatórios e benchmarking de desempenho (N = 100, 1.000 e 10.000 elementos).
 
