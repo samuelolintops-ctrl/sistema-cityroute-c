@@ -1,6 +1,8 @@
 #ifndef UTIL_H_INCLUDED
 #define UTIL_H_INCLUDED
 
+#include <stddef.h>
+
 /*
  * Funcao: limpa_tela
  * Complexidade Temporal: O(1) pior caso

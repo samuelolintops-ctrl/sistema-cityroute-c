@@ -34,8 +34,8 @@ int tem_maior_prioridade(Pedido_entrega a, Pedido_entrega b){
     retornando 1 se sim e 0 se nao
     */
     // Avalia as prioridades
-    if(a.prioridade > b.prioridade) return 1;
-    if(a.prioridade < b.prioridade) return 0;
+    if(a.prioridade < b.prioridade) return 1;
+    if(a.prioridade > b.prioridade) return 0;
     
     // Desempate FIFO
     if(a.ordem_chegada < b.ordem_chegada) return 1;

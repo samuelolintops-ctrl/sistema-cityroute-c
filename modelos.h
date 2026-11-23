@@ -5,9 +5,9 @@
 
 // Constantes para niveis de prioridade
 typedef enum{
-    PRIORIDADE_EXPRESSA = 3,
+    PRIORIDADE_EXPRESSA = 1,
     PRIORIDADE_VIP = 2,
-    PRIORIDADE_CONVENCIONAL = 1
+    PRIORIDADE_CONVENCIONAL = 3
 } Prioridade;
 
 // Representa um local de destino das encomendas
