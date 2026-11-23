@@ -1,7 +1,7 @@
 #ifndef MODELOS_H_INCLUDED
 #define MODELOS_H_INCLUDED
 
-#define TAM_NOME_LOCAL 80
+#define TAM_NOME_LOCAL 81
 
 // Constantes para niveis de prioridade
 typedef enum{
@@ -16,6 +16,15 @@ typedef struct ponto_entrega{
 	char nome_local[TAM_NOME_LOCAL];
 	double latitude, longitude;
 } Ponto_entrega;
+
+// Representa a arvore BST para os pontos de entrega
+typedef struct noBST{
+    Ponto_entrega dados; 
+    int altura; 
+    struct noBST* esq;
+    struct noBST* dir;
+} NoBST;
+
 
 // Representa um pacote a ser despachado
 typedef struct pedido_entrega{
