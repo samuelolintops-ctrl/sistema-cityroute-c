@@ -13,7 +13,7 @@ Historico *registrar_pedido_processado(Historico *cabeca, Pedido_entrega p){
 
 }
 
-//Percorre toda a lista encadeada imprimindo os pedidos ja despachados
+// Percorre toda a lista encadeada imprimindo os pedidos ja despachados
 void consultar_historico(Historico *cabeca){
     if (cabeca == NULL){
         printf("Nao ha pedidos registrado no historico de despacho.\n");
